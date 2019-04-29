@@ -2,7 +2,7 @@
     require("mysqli_connect.php");
 
     global $mysqli;
-    $category = $_POST['category'];
+    $category = $_GET['category'];
     echo "<div> $category </div>";
     $sql = "SELECT skill_id,skill FROM skills WHERE category=".$category;
     $result = mysqli_query($mysqli, $sql);

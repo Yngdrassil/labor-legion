@@ -107,8 +107,8 @@ $(document).ready(function() {
           var category_id = $(this).val();
 
           $.ajax({
-                url: './getSkills.php',
-                type: 'post',
+                url: '/getSkills.php',
+                type: 'GET',
                 data: {category:category_id},
                 dataType: 'json',
                 success: function(response){
