@@ -18,6 +18,11 @@
       <link href="all.css" rel="stylesheet">
       <link rel="stylesheet" href="./createListing.css">
       <link rel="stylesheet" href="css/grayscale.css">
+
+      <!-- Material Design Bootstrap -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/css/mdb.min.css" rel="stylesheet">
+      <!-- MDB core JavaScript -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/js/mdb.min.js"></script>
     </head>
 
     <!-- Navigation -->
@@ -80,6 +85,11 @@
                     <select class="custom-select" id="skillSelect" name="category">
 
                     </select>
+                </div>
+                <div class="form-label-group file-upload-wrapper upload">
+                    <label class="unselectable font-weight-bold" for="imageUpload">Upload Image:</label>
+                    <input type="file" id="input-file-now" class="file-upload" />
+                </div>
                 <div class="form-label-group space row">
                     <label class="unselectable font-weight-bold" for="offerPrice">Offer Price</label>
                     <input type="text" name="offerPrice" class="form-control">
@@ -116,4 +126,8 @@ $(document).ready(function() {
           });
     });
 });
+</script>
+
+<script>
+    $('.file-upload').file_upload();
 </script>
